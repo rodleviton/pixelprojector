@@ -1,0 +1,2 @@
+{"ts":1359537171554,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"pixelprojector\n==============\n\njQuery pixel plugin to simulate image projection over a specified area"]],"start1":0,"start2":0,"length1":0,"length2":101}]],"length":101}
+{"contributors":[],"silentsave":false,"ts":1359537190641,"patch":[[{"diffs":[[-1,"p"],[1,"P"],[0,"ixel"],[-1,"p"],[1," P"],[0,"roje"]],"start1":0,"start2":0,"length1":10,"length2":11},{"diffs":[[0,"========"],[1,"="],[0,"\n\njQuery"]],"start1":22,"start2":22,"length1":16,"length2":17}]],"length":103,"saved":false}
