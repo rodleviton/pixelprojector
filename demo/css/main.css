@@ -1,13 +1,18 @@
 /* ==========================================================================
    Custom styles
    ========================================================================== */
+#container{
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
 
 .block {
     width: 150px;
     height: 150px;
     background: #fff;
     position: absolute;
-    border:3px solid #eee;
+    border: 3px solid #eee;
     -webkit-transition:-webkit-box-shadow, background, border, color 0.25s ease-in-out;
     -moz-transition:-moz-box-shadow, background, border, color 0.25s ease-in-out;
     -o-transition:box-shadow, background, border, color 0.25s ease-in-out;
@@ -20,5 +25,5 @@
     line-height: 150px;
     color: #eee;
     overflow: hidden;
-    background: url(../img/bg.jpg) no-repeat;
+    background: url(../img/bg-1.jpg) no-repeat;
 }
