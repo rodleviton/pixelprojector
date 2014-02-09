@@ -3,8 +3,10 @@
    ========================================================================== */
 #container{
     width: 960px;
+    height: 640px;
     margin: 0 auto;
     position: relative;
+    background: url(../img/bg-1-bw.jpg) no-repeat;
 }
 
 .block {
@@ -12,12 +14,7 @@
     height: 150px;
     background: #fff;
     position: absolute;
-    border: 3px solid #eee;
-    -webkit-transition:-webkit-box-shadow, background, border, color 0.25s ease-in-out;
-    -moz-transition:-moz-box-shadow, background, border, color 0.25s ease-in-out;
-    -o-transition:box-shadow, background, border, color 0.25s ease-in-out;
-    -ms-transition:box-shadow, background, border, color 0.25s ease-in-out;
-    transition:box-shadow, background, border, color 0.25s ease-in-out;
+    border: 3px solid rgba(255, 255, 255, .35);
     -webkit-box-shadow: 0px 0px 80px rgba(50, 50, 50, 0.6);
     box-shadow: 0px 0px 80px rgba(50, 50, 50, 0.6);
     text-align: center;
@@ -26,4 +23,6 @@
     color: #eee;
     overflow: hidden;
     background: url(../img/bg-1.jpg) no-repeat;
+    transition: top 1s ease-in-out, left 1s ease-in-out, background-position 1s ease-in-out;
+    -webkit-transition: top 1s ease-in-out, left 1s ease-in-out, background-position 1s ease-in-out;
 }

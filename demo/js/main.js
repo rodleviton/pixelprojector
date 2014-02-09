@@ -1,3 +1,3 @@
 $(function() {
-    $('.block').pixelProjector();
+    $('.projector-container').pixelProjector();
 });
