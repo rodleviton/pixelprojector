@@ -53,7 +53,6 @@
         },
 
         shufflePixels: function(el, top, left) {
-
             var topOffset = - top;
             var leftOffset = - left;
             var offset = (leftOffset + 'px' + ' ' + topOffset + 'px');

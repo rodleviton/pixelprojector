@@ -1,7 +1,7 @@
 $(function() {
 
     var divs = [];
-    var num = 40;
+    var num = 10;
 
     // Generate some random divs
     for (var i = 0; i <= num; i++) {
@@ -28,9 +28,6 @@ $(function() {
         if((left + element.width()) >= 960) {
             left -= (element.width() * 2);
         }
-
         element.css({'top': top, 'left': left, 'position': 'absolute'});
-
     }
-
 });

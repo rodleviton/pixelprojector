@@ -6,7 +6,8 @@
     height: 640px;
     margin: 0 auto;
     position: relative;
-    background: url(../img/bg-1-bw.jpg) no-repeat;
+    background: url(../img/man-b&w.jpg) no-repeat;
+    background-size: 100%;
 }
 
 .block {
@@ -22,7 +23,7 @@
     line-height: 150px;
     color: #eee;
     overflow: hidden;
-    background: url(../img/bg-1.jpg) no-repeat;
+    background: url(../img/man.jpg) no-repeat;
     transition: top 1s ease-in-out, left 1s ease-in-out, background-position 1s ease-in-out;
     -webkit-transition: top 1s ease-in-out, left 1s ease-in-out, background-position 1s ease-in-out;
 }
