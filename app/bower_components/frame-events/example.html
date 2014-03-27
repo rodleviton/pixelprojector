@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+  <style>
+    
+    #toucharea { 
+      height: 300px;
+      width: 100%;
+      background: #eee;
+    }
+    
+    #scrollpos {
+      position: fixed;
+      top: 0;
+      right: 0;
+      background: #ccc;
+      padding: 5px;
+      font-size: 20px;
+    }
+    
+  </style>
+</head>
+<body>
+ 
+<div id="scrollpos"></div>
+<div id="toucharea"></div>
+
+<div style="height:600px;"></div>
+
+<script src="./frame-events.js"></script>
+<script>
+  
+  function logTouchEvent(ev) {
+    console.log(ev.type, ev);
+  }    
+  
+  var toucharea = document.querySelector("#toucharea"); 
+  FrameEvents.on(toucharea, "touchstart", logTouchEvent);
+  FrameEvents.on(toucharea, "touchmove", logTouchEvent, function(ev){ ev.preventDefault() });
+  FrameEvents.on(toucharea, "touchend", logTouchEvent);  
+  
+  FrameEvents.on(window, "mousemove", console.log.bind(console));
+  
+  var scrollpos = document.querySelector("#scrollpos"); 
+  
+  FrameEvents.on(window, "scroll", 
+    function(ev, data) {
+      scrollpos.innerHTML = data.scrollX +"&times;"+ data.scrollY;
+    }, 
+    function() {
+      return {
+        scrollX: window.scrollX,
+        scrollY: window.scrollY
+      };
+    }
+  );
+
+</script>
+
+</body>
+</html>

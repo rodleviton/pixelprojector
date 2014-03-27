@@ -1,0 +1,32 @@
+{
+  "name": "frame-events",
+  "homepage": "https://github.com/jtangelder/frame-events",
+  "authors": [
+    "Jorik Tangelder <j.tangelder@gmail.com>"
+  ],
+  "description": "Run event handlers in the animation frame, to prevent flooding and better performance",
+  "main": "frame-events.js",
+  "keywords": [
+    "events",
+    "jank",
+    "requestanimationframe",
+    "handler"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "e099162849",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "e099162849b7155b9108559da7f733ba68b7da63"
+  },
+  "_source": "git://github.com/jtangelder/frame-events.git",
+  "_target": "*",
+  "_originalSource": "frame-events"
+}
