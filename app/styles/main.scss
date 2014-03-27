@@ -37,6 +37,7 @@ body {
     color: #eee;
     overflow: hidden;
     background: url(../images/bg-color.jpg) no-repeat;
+    transform: translate3d(0,0,0);
     transition: top 1s ease-in-out, left 1s ease-in-out, background-position 1s ease-in-out;
     -webkit-transition: top 1s ease-in-out, left 1s ease-in-out, background-position 1s ease-in-out;
 

@@ -25,6 +25,9 @@ $(function() {
     var lastTouches = [];
     var xOffset = 0;
     var yOffset = 0;
+    var topOffset = 0;
+    var leftOffset = 0;
+    var offset = 0;
 
     function updatePositions() {
         Hammer.utils.each(lastTouches, function(touch) {
@@ -36,8 +39,21 @@ $(function() {
                 xOffset = ( ($(window).width() - $(container).width()) / 2 );
                 yOffset = ( $(container).position().top );
                 fragment.appendChild(touch.target);
-                $(touch.target).css({'left': ((touch.pageX - 75) - xOffset) + 'px', 'top': ((touch.pageY - 75) - yOffset) + 'px'});
-                $(touch.target).pixelProjector().data('plugin_pixelProjector').update(touch.toElement, ((touch.pageY - 75) - yOffset), ((touch.pageX - 75) - xOffset));
+
+
+                // TODO
+                // Execute from pixelprojector plugin
+                topOffset = ($(container).position().top - ((touch.pageY - 75) - yOffset)) - 3;
+                leftOffset = ($(container).position().left - ((touch.pageX - 75) - xOffset)) - 3;
+                offset = (leftOffset + 'px' + ' ' + topOffset + 'px');
+
+                // TODO
+                // Automatically get element offset
+                // Execute background postion from pixel projector plugin
+                $(touch.target).css({'left': ((touch.pageX - 75) - xOffset) + 'px', 'top': ((touch.pageY - 75) - yOffset) + 'px', 'background-position': offset});
+
+
+                //$(touch.target).pixelProjector().data('plugin_pixelProjector').update(touch.toElement, ((touch.pageY - 75) - yOffset), ((touch.pageX - 75) - xOffset));
             }
         });
         container.appendChild(fragment);
